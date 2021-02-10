@@ -1,0 +1,364 @@
+/*=================================
+	base
+================================ */
+
+/* common */
+html {
+	font-size: 62.5%; /* 10px = 1rem */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	width:100%;
+	height:100%;
+}
+
+/* 12px = 75% 13px = 82% 14px = 88% 15px = 94% 16px = 100% */
+body {
+	font-size: 14px;
+	font-size: 1.4em;
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HiraKakuPro-W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	line-height: 1.8;
+	color: #333333;
+}
+input, textarea, select, option, optgroup {
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HiraKakuPro-W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+/*=================================
+	header
+================================ */
+.header {
+  width: 100%;
+  height: 136px;  
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/header_bg01.png");  
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  position: fixed;  
+}
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;  
+}
+.header-sp-nav {
+  display: none;
+}
+.sub-title {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 25px;
+}
+.pcMenu {
+  display: flex;
+  justify-content: space-between;    
+  align-items: center;
+  a {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 2.4rem;
+    color: #000000;   
+    letter-spacing: 1px;    
+  }
+  .menuText {
+    font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 1.2rem;
+    color: #000000;              
+  }
+}
+.pcMenu-list {
+  width: 160px;
+  text-align: center;     
+  &:hover {
+    background-color: #d5f7f7;    
+    transition: 0.2s;
+  }  
+}
+.title-logo {  
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/header_logo03.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;  
+  text-indent: -9999px;    
+  height: 80px;  
+}
+
+/*=================================
+	main
+================================ */
+.top-wrapper {
+  width: 100%;    
+  margin-top: 140px;
+  background-color: #f6f4f1;
+}
+.title-wrapper {
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/com_bg02.png");
+  background-color: #71c5ee;
+}
+.wrapper-title {
+  width: 40%;
+  height: 130px;
+  padding: 30px 0;
+  margin: 0 auto;  
+}
+.wrapper-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.store-contents {
+  background-color: #fff;
+  padding: 20px 15px;  
+  margin-top: 50px;
+}
+.store-top-image {
+  background-image: url("https://www.his-j.com/branch/hawaii/store_info/images/shop_01.jpg");
+  background-size: cover;  
+  height: 370px;  
+  h3 {
+    font-size: 2.0rem;
+    color: #fff;
+    font-weight: normal;
+    background-image: url("https://www.his-j.com/branch/hawaii/store_info/images/logo_bg.jpg");
+    width: 180px;
+    padding: 15px 20px;
+    margin: 0 0 0 15px;
+  }
+}
+.store-image {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.store01, .store02 {
+  margin-right: 15px;
+}
+
+.hawaii-contents {
+  background-color: #fff;
+  padding: 50px 30px 30px;
+  margin: 40px 0; 
+  position: relative; 
+}
+.flower01 {
+  position: absolute;
+  top: -30px;
+  left: -60px;
+  width: 150px;
+}
+.flower02 {
+  position: absolute;
+  bottom: -30px;
+  right: -60px;
+  width: 150px;
+}
+.hawaii {
+  display: flex;
+  justify-content: space-between;   
+}
+.hawaii-text {  
+  text-align: center;
+  margin: 0 auto;
+  h2 {
+    font-size: 2.0rem;
+    color: #6b4015;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+}
+.access-contents {
+  display: flex;
+  justify-content: space-between;   
+  padding-bottom: 30px;
+}
+.map {
+  width: 50%;
+}
+.maps-outer {  
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+}
+.maps-outer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.access-text {
+  width: 50%;
+  margin-left: 15px;
+  p {
+    font-size: 1.4rem;    
+  }
+}
+.access-title {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+// pagetop
+#page_top {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+#page_top a {
+  background-color: #66f3f3;
+  border-radius: 45%;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+#page_top a:hover {
+  background-color: #d5f7f7;
+  color: #333333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/*=================================
+	footer
+================================ */
+.footer {
+  width: 100%;
+  height: 140px;
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/footer_bg01.png");
+}
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;  
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo {
+  height: 30px;  
+}
+
+@media screen and (max-width: 768px) {
+  /* header */    
+  .header-inner {
+    padding: 0 4vw;
+  }
+  .header-pc-nav {
+    display: none;
+  }
+  .header-sp-nav {
+    display: block;    
+  }  
+  .title-sp-logo {
+    width: 200px;
+    margin-top: 30px;
+    background-color: #d5f7f7;   
+    border-radius: 10px; 
+  }
+  #wrapper nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 60%;
+    padding-top: 50px;
+    background:#333;
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 102;
+    ul li {
+      display:block;
+      padding: 20px 28px;
+      a {        
+        color: #ddd
+      }
+    }
+  }  
+  #wrapper .btn-gnavi {
+    position: fixed;
+    top: 60px;
+    right: 40px;
+    width: 30px;
+    height: 24px;
+    z-index: 103;
+    box-sizing: border-box;       
+    transition: all 400ms;
+    cursor: pointer;
+    span {
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background: #666;
+      border-radius: 10px;      
+      transition: all 400ms;      
+    }
+  }  
+  #wrapper .btn-gnavi span:nth-child(1) {
+    top: 0
+  }
+  #wrapper .btn-gnavi span:nth-child(2) {
+    top: 10px
+  }
+  #wrapper .btn-gnavi span:nth-child(3) {
+    top: 20px
+  }
+  #wrapper .btn-gnavi.open span {
+    background: #fff;
+    width: 24px;
+  } 
+
+  /* main */  
+  .wrapper-title {
+    width: 70%;
+  }
+  .wrapper-inner {
+    padding: 0 4vw;
+  }  
+  .hawaii {
+    display: block;    
+  }  
+  .hawaii-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .access-contents {
+    display: block;
+    padding: 0 4vw;    
+  }
+  .map {
+    width: 100%;
+  }  
+  .access-text {
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .access-title {    
+    width: 100px;
+    margin: 30px auto 20px;
+  }
+  
+  
+  /* footer */
+  .footer-inner {
+    padding: 0 4vw;
+  }
+
+}
+@media screen and (max-width: 425px) {
+  .store-image {
+    display: block;    
+    margin-top: 15px;
+  }
+  .store01, .store02 {
+    margin-bottom: 15px;
+  }
+
+}

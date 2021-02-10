@@ -1,0 +1,419 @@
+@charset "UTF-8";
+/*=================================
+	base
+================================ */
+/* common */
+html {
+  font-size: 62.5%;
+  /* 10px = 1rem */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* 12px = 75% 13px = 82% 14px = 88% 15px = 94% 16px = 100% */
+body {
+  font-size: 14px;
+  font-size: 1.4em;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HiraKakuPro-W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  line-height: 1.8;
+  color: #333333;
+}
+
+input, textarea, select, option, optgroup {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HiraKakuPro-W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+/*=================================
+	header
+================================ */
+.header {
+  width: 100%;
+  height: 136px;
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/header_bg01.png");
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  position: fixed;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-sp-nav {
+  display: none;
+}
+
+.sub-title {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.pcMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pcMenu a {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 2.4rem;
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+.pcMenu .menuText {
+  font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.pcMenu-list {
+  width: 160px;
+  text-align: center;
+}
+
+.pcMenu-list:hover {
+  background-color: #d5f7f7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.title-logo {
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/header_logo03.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -9999px;
+  height: 80px;
+}
+
+/*=================================
+	main
+================================ */
+.top-wrapper {
+  width: 100%;
+  margin-top: 140px;
+  background-color: #f6f4f1;
+}
+
+.title-wrapper {
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/com_bg02.png");
+  background-color: #71c5ee;
+}
+
+.wrapper-title {
+  width: 40%;
+  height: 130px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.wrapper-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.specialist-contents h3 {
+  font-size: 2.3rem;
+  font-weight: normal;
+  color: #402e1e;
+  text-align: center;
+  margin: 40px 0 15px;
+}
+
+.specialist-image {
+  border: 2px solid #402e1e;
+  border-radius: 20px;
+}
+
+.aloha-contents {
+  background-color: #fff;
+  padding: 50px 30px 30px;
+  margin: 40px 0;
+  position: relative;
+}
+
+.flower01 {
+  position: absolute;
+  top: -30px;
+  left: -60px;
+  width: 150px;
+}
+
+.flower02 {
+  position: absolute;
+  bottom: -30px;
+  right: -60px;
+  width: 150px;
+}
+
+.aloha-inner {
+  border-bottom: 2px dotted #333;
+  padding-bottom: 20px;
+}
+
+.aloha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.aloha-image {
+  width: 20%;
+}
+
+.aloha-text {
+  width: 80%;
+}
+
+.aloha-text h2 {
+  font-size: 2.0rem;
+  color: #6b4015;
+  margin-bottom: 5px;
+}
+
+.aloha-text p {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.aloha-text a:hover {
+  text-decoration: underline;
+  color: #337ab7;
+}
+
+.info-btn {
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px 0 50px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.info-btn:hover {
+  -webkit-animation-name: btnPush;
+          animation-name: btnPush;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.info-btn:hover .flower03, .info-btn:hover .flower04 {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.flower03 {
+  width: 70px;
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: -30px;
+}
+
+.flower04 {
+  width: 60px;
+  position: absolute;
+  opacity: 0;
+  bottom: 20px;
+  right: -20px;
+}
+
+@-webkit-keyframes btnPush {
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes btnPush {
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#page_top {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+
+#page_top a {
+  background-color: #66f3f3;
+  border-radius: 45%;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+
+#page_top a:hover {
+  background-color: #d5f7f7;
+  color: #333333;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*=================================
+	footer
+================================ */
+.footer {
+  width: 100%;
+  height: 140px;
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/footer_bg01.png");
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-logo {
+  height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  /* header */
+  .header-inner {
+    padding: 0 4vw;
+  }
+  .header-pc-nav {
+    display: none;
+  }
+  .header-sp-nav {
+    display: block;
+  }
+  .title-sp-logo {
+    width: 200px;
+    margin-top: 30px;
+    background-color: #d5f7f7;
+    border-radius: 10px;
+  }
+  #wrapper nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 60%;
+    padding-top: 50px;
+    background: #333;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 102;
+  }
+  #wrapper nav ul li {
+    display: block;
+    padding: 20px 28px;
+  }
+  #wrapper nav ul li a {
+    color: #ddd;
+  }
+  #wrapper .btn-gnavi {
+    position: fixed;
+    top: 60px;
+    right: 40px;
+    width: 30px;
+    height: 24px;
+    z-index: 103;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+    cursor: pointer;
+  }
+  #wrapper .btn-gnavi span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #666;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  #wrapper .btn-gnavi span:nth-child(1) {
+    top: 0;
+  }
+  #wrapper .btn-gnavi span:nth-child(2) {
+    top: 10px;
+  }
+  #wrapper .btn-gnavi span:nth-child(3) {
+    top: 20px;
+  }
+  #wrapper .btn-gnavi.open span {
+    background: #fff;
+    width: 24px;
+  }
+  /* main */
+  .wrapper-title {
+    width: 70%;
+  }
+  .wrapper-inner {
+    padding: 0 4vw;
+  }
+  .specialist-contents h3 {
+    font-size: 1.6rem;
+  }
+  .aloha {
+    display: block;
+  }
+  .aloha-image {
+    width: 50%;
+    margin: 0 auto 40px;
+  }
+  .aloha-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* footer */
+  .footer-inner {
+    padding: 0 4vw;
+  }
+}
+/*# sourceMappingURL=specialist.css.map */

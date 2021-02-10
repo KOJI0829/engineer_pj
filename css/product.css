@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/*=================================
+	base
+================================ */
+/* common */
+html {
+  font-size: 62.5%;
+  /* 10px = 1rem */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* 12px = 75% 13px = 82% 14px = 88% 15px = 94% 16px = 100% */
+body {
+  font-size: 14px;
+  font-size: 1.4em;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HiraKakuPro-W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  line-height: 1.8;
+  color: #333333;
+}
+
+input, textarea, select, option, optgroup {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HiraKakuPro-W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+/*=================================
+	header
+================================ */
+.header {
+  width: 100%;
+  height: 136px;
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/header_bg01.png");
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  position: fixed;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-sp-nav {
+  display: none;
+}
+
+.sub-title {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.pcMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pcMenu a {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 2.4rem;
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+.pcMenu .menuText {
+  font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.pcMenu-list {
+  width: 160px;
+  text-align: center;
+}
+
+.pcMenu-list:hover {
+  background-color: #d5f7f7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.title-logo {
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/header_logo03.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -9999px;
+  height: 80px;
+}
+
+/*=================================
+	main
+================================ */
+.top-wrapper {
+  width: 100%;
+  margin-top: 140px;
+  background-color: #f6f4f1;
+}
+
+.wrapper-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.product-contents {
+  padding: 50px 0;
+}
+
+.pick-up-wrapper {
+  margin: 50px auto 30px;
+}
+
+.pick-up-wrapper h3 {
+  font-size: 3.0rem;
+  border-bottom: 1px solid #333;
+}
+
+.pick-up-wrapper span {
+  font-size: 1.1rem;
+  margin-left: 20px;
+}
+
+.column03 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.column-item {
+  width: 32%;
+  margin: 20px auto;
+}
+
+.column-item a:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.column-item-text {
+  margin-top: 10px;
+}
+
+.column-item-text p {
+  font-size: 1.1rem;
+  padding: 0 10px;
+}
+
+.info-wrapper p {
+  margin-top: 10px;
+}
+
+.info-image {
+  width: 40%;
+}
+
+#page_top {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+
+#page_top a {
+  background-color: #66f3f3;
+  border-radius: 45%;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+
+#page_top a:hover {
+  background-color: #d5f7f7;
+  color: #333333;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*=================================
+	footer
+================================ */
+.footer {
+  width: 100%;
+  height: 140px;
+  background-image: url("https://www.his-j.com/branch/hawaii/common/images/footer_bg01.png");
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-logo {
+  height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  /* header */
+  .header-inner {
+    padding: 0 4vw;
+  }
+  .header-pc-nav {
+    display: none;
+  }
+  .header-sp-nav {
+    display: block;
+  }
+  .title-sp-logo {
+    width: 200px;
+    margin-top: 30px;
+    background-color: #d5f7f7;
+    border-radius: 10px;
+  }
+  #wrapper nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 60%;
+    padding-top: 50px;
+    background: #333;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 102;
+  }
+  #wrapper nav ul li {
+    display: block;
+    padding: 20px 28px;
+  }
+  #wrapper nav ul li a {
+    color: #ddd;
+  }
+  #wrapper .btn-gnavi {
+    position: fixed;
+    top: 60px;
+    right: 40px;
+    width: 30px;
+    height: 24px;
+    z-index: 103;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+    cursor: pointer;
+  }
+  #wrapper .btn-gnavi span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #666;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  #wrapper .btn-gnavi span:nth-child(1) {
+    top: 0;
+  }
+  #wrapper .btn-gnavi span:nth-child(2) {
+    top: 10px;
+  }
+  #wrapper .btn-gnavi span:nth-child(3) {
+    top: 20px;
+  }
+  #wrapper .btn-gnavi.open span {
+    background: #fff;
+    width: 24px;
+  }
+  /* main */
+  .wrapper-inner {
+    padding: 0 4vw;
+  }
+  .pick-up-wrapper {
+    margin: 50px auto 50px;
+  }
+  .column03 {
+    display: block;
+  }
+  .column-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .column-item-image {
+    width: 50%;
+  }
+  .column-item-text {
+    width: 50%;
+  }
+  /* footer */
+  .footer-inner {
+    padding: 0 4vw;
+  }
+}
+/*# sourceMappingURL=product.css.map */
